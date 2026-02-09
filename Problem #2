@@ -1,0 +1,63 @@
+[Ch. 2 Homework ( Input Output ).py](https://github.com/user-attachments/files/25189874/Ch.2.Homework.Input.Output.py)
+import math
+
+pizzaslices = 8
+family = 4
+
+person1 = int(input("how many slices of pizza did you eat: "))
+person2 = int(input("how many slices of pizza did you eat: "))
+person3 = int(input("how many slices of pizza did you eat: "))
+person4 = int(input("how many slices of pizza did you eat: "))
+
+
+totalslices = person1 + person2 + person3 + person4
+
+
+wholepizzas = math.ceil(totalslices/pizzaslices)
+
+
+leftbymodulo = totalslices%pizzaslices
+
+print("Total number of pizzas to buy", wholepizzas)
+
+print("Total slices left", leftbymodulo)
+[Decision Structures HW.py](https://github.com/user-attachments/files/25189875/Decision.Structures.HW.py)
+distance = float(input("Enter the distance in miles"))
+speedlimit = float(input("Enter miles/ hour speed limit"))
+speed = float(input("Enter your average speed in miles/hour"))
+
+time = distance / speedlimit
+speedtime = distance / speed
+
+Minutes_in_hour = 60
+
+speedtimein = speedtime*Minutes_in_hour[Loops HW.py](https://github.com/user-attachments/files/25189877/Loops.HW.py)buying = input('do you want a muffin or cupcake?')
+muffins = 10
+cupcakes = 10
+
+while buying != "0":
+    if  buying == "muffin" and muffins > 0:
+        muffins = muffins -1
+        if buying == "muffin" and muffins == 0:
+                print("Muffins Out of stock")
+    if buying == "cupcake" and cupcakes  > 0:
+        cupcakes = cupcakes -1
+    if buying == "cupcakes" and cupcakes == 0:
+        print("cupcakes Out of stock")
+    buying = input('do you want a muffin or cupcake?')
+
+print("muffins:", muffins, "cupcakes:", cupcakes)
+      
+
+
+timein = time*Minutes_in_hour
+
+if speed > speedlimit:
+    savedtime = timein - speedtimein
+else:
+    print("safe driver but no time saved")
+
+print(f'time taken at speed limit {timein:.2f} minutes')
+print(f'time taken at your speed {speedtimein:.2f} minutes')
+print(f'time saved in min {savedtime:.2f}')
+    
